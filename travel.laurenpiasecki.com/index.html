@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Lauren Piasecki</title>
+  <meta charset="utf-8">
+   <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favi3.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js" type="text/javascript"></script> 
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyaVkZRR5kZ35crGFsGmobTGVb9d7dHSo&sensor=true"></script>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage"><img src="images/lp4.png" width="30%" /></a>
+    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage">HOME</a></li>
+        <li><a href="#travel">TRAVEL</a></li>
+		<li><a href="#map_canvas">MAP</a></li>
+		<li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="travel" class="bg-1">
+  <div class="container text-center">
+    <h3>TRAVEL</h3>
+    <p class="text-center">Places I have been to.</p>
+	<p class="text-center">Click each location marker for photos.</p>
+	<div class="plane">
+	<a class="text-center"><img src="images/plane.png" width="7%" /></a>
+	</div>
+  </div>
+</div>
+<div id="map_canvas"> 
+<script>
+var myLatlngCenter = new google.maps.LatLng(38.021938, -34.416840);
+var mapOptions = {
+          center: myLatlngCenter,
+          zoom: 3,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+};
+var myMap = new google.maps.Map(document.getElementById("map_canvas"),mapOptions);
+</script>
+</div>
+<div id="contact" class="container">
+  <h3 class="text-center">CONTACT</h3>
+	<p>&nbsp;</p>
+  <div class="row">
+    <div class="col-md-4">
+      <p></p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>&emsp;<a href="https://maps.google.com/?q=43.6532,-79.3832" target="_blank">Toronto, Canada</a></p>
+      <p><span class="glyphicon glyphicon-envelope"></span>&emsp; 
+		  <a href="mailto:lauren@laurenpiasecki.com?subject=Greetings%20from%20your%20website!">lauren@laurenpiasecki.com</a></p>
+	  <p><span class="glyphicon glyphicon-camera"></span>&emsp;<a href="https://www.instagram.com/bearbear.cat/" target="_blank">@bearbear.cat</a></p>
+    </div>
+    <div class="col-md-8">
+	<form action="mailto:lauren@laurenpiasecki.com" method="post">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn pull-right" type="submit">Send</button>
+        </div>
+      </div>
+	  </form>
+    </div>
+  </div>
+  <br>
+
+  
+</div>
+
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a><br><br>
+  <p>&copy; 2017. Lauren Piasecki. </p> 
+</footer>
+<script type="text/javascript">
+var lat = 0;
+var long = 0;
+$(document).ready(function(){
+$.getJSON("https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=5c1ea98f57d56ab41f3729c43c1f6f45&user_id=149165893@N04&has_geo=1&extras=geo&format=json&jsoncallback=?", displayImages);
+function displayImages(data){
+                    $.each(data.photos.photo, function(i,item){
+                    lat = item.latitude;
+					long = item.longitude;
+					var photoURL = 'http://farm' + item.farm + '.static.flickr.com/' + item.server + '/' + item.id + '_' + item.secret + '_m.jpg';		
+					htmlString = '<img src="' + photoURL + '">';					
+					var contentString = '<div id="content">' + htmlString + '</div>';
+					var infowindow = new google.maps.InfoWindow({
+  		 				 content: contentString
+					});
+					var myLatlngMarker = new google.maps.LatLng(lat,long);
+					var marker = new google.maps.Marker({
+   					position: myLatlngMarker,
+     				map: myMap,
+     				title:"Photo"
+					});
+					google.maps.event.addListener(marker, 'click', function() {
+  					infowindow.open(myMap,marker);
+					});					
+		});					
+} 
+}); 
+</script> 
+</body>
+</html>

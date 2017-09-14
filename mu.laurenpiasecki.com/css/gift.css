@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:600');
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/*#lights {
+    width: 100%;
+    height: 380px;
+}
+*/
+#logo {
+    margin-top: 40px;
+}
+
+
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    background-color: #e0e1e3;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.white {
+    background-color: white;
+}
+
+.left {
+    float: left;
+}
+
+#margined {
+    float: right;
+}
+
+.row h2 {
+    padding-bottom: 2em;
+}
+
+.main {
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-family: 'Simplifica', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#textwidth p{
+       width: 90%;
+      padding-top: 5em;
+}
+p {
+    font-family: 'Simplifica', sans-serif;
+    font-size: 1.7em;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+h3 a {
+    color: darkblue;
+    text-decoration: underline;
+}
+
+h3 {
+    font-size: 1.8em;
+    font-weight: 600;
+    font-family: 'Simplifica', sans-serif;
+    text-align: right;
+    padding-top: 1em;
+    padding-bottom: 3em;
+}
+h4{
+    font-size: 1.3em;
+        font-family: 'Open Sans', sans-serif;
+
+}
+
+h2 {
+    font-size: 2em;
+    font-family: 'Simplifica', sans-serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: royalblue;
+    text-decoration: underline;
+}
+
+video:after {
+    padding-top: 10%;
+}
+
+.wrapper:after {
+    padding-bottom: 5%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+footer p{
+    font-family: 'Simplifica', sans-serif;
+    font-size: 1.6em;
+    line-height: 30px;
+    font-weight: 500;
+    padding-top: 1em;
+}
+footer hr{
+    margin-top: 8em;
+    width: 100%;
+    float: right;
+    
+}
+
+.logo {
+    float: right;
+    padding-top: 8%;
+    padding-bottom: 5%;
+}
+
+.right {
+    float: right;
+    padding-top: 3%;
+    padding-left: 12em;
+    line-height: 30px;
+    padding-bottom: 5%;
+}
+.middle
+{
+     width: 80%;
+    margin: 0 15%;
+
+}
+.wrapper ul li {
+    list-style: none;
+    margin-left: 30px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+footer ul{
+    padding-top: 1em;
+      font-family: 'Simplifica', sans-serif;
+    font-size: 1.5em;
+     list-style: none;
+ 
+    letter-spacing: 2px;
+    font-weight: 500;
+    
+    
+}
+#light{
+    color: grey;
+    font-size: 0.8em;
+  
+}
+#light img{
+  vertical-align:middle;
+}
+#ptop{
+    padding-top: 2em;
+}
+#less{
+    width: 150px;
+}
+.border{
+     border-right: 1px solid grey;
+   margin-top: 2em;
+    margin-left: 4em;
+    height: 100px;
+}
+#alignright{
+    margin-left: 2em;
+    width: auto;
+    line-height: 20px;
+    
+}
+
+footer ul li{
+     margin: 0 auto;
+    line-height: 30px;
+}
+.column,
+.columns {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+}
+
+.one.column {
+    width: 4.66666666667%;
+}
+
+.two.columns {
+    width: 13.3333333333%;
+}
+
+.three.columns {
+    width: 22%;
+}
+
+.four.columns {
+    width: 30.6666666667%;
+}
+
+.five.columns {
+    width: 39.3333333333%;
+}
+
+.six.columns {
+    width: 48%;
+}
+
+.seven.columns {
+    width: 56.6666666667%;
+}
+
+.eight.columns {
+    width: 65.3333333333%;
+}
+
+.nine.columns {
+    width: 74.0%;
+}
+
+.ten.columns {
+    width: 82.6666666667%;
+}
+
+.eleven.columns {
+    width: 91.3333333333%;
+}
+
+.twelve.columns {
+    width: 100%;
+    margin-left: 0;
+}
+
+.one-third.column {
+    width: 30.6666666667%;
+}
+
+.two-thirds.column {
+    width: 65.3333333333%;
+}
+
+.container:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.one-half.column {
+    width: 48%;
+}
+
+
+/* Form CSS*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font: 12pt Arial;
+}
+
+.field {
+    display: flex;
+    position: realtive;
+    margin: 5em auto;
+    width: 70%;
+    flex-direction: row;
+    box-shadow: 1px 1px 0 rgb(1, 76, 29), 2px 2px 0 rgb(1, 76, 29), 3px 3px 0 rgb(1, 76, 29), 4px 4px 0 rgb(1, 76, 29), 5px 5px 0 rgb(1, 76, 29), 6px 6px 0 rgb(1, 76, 29), 7px 7px 0 rgb(1, 76, 29);
+}
+
+.field>input[type=text],
+.field>button {
+    display: block;
+    font: 1.2em 'Montserrat Alternates';
+}
+
+.field>input[type=text] {
+    flex: 1;
+    padding: 0.6em;
+    border: 0.2em solid darkgreen;
+}
+
+.field>button {
+    padding: 0.6em 0.8em;
+    background-color: darkgreen;
+    color: white;
+    border: none;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>mu Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/emailvalidation.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="row white">
+                <div class="three columns">
+                    <a href="index.html"><img class="logo" src="img/logo.png" alt="mu Restaurant Logo"></a>
+                </div>
+                <div class="one column"></div>
+                <div class="eight columns">
+                    <nav class="right">
+                       <ul>
+                            <li><a href="menu.html">Menu</a></li>
+                            <li><a href="location.html">Location</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="giftcards.html">Gift Cards</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="twelve columns">
+                <video autoplay loop muted src="img/steak.mp4" width="100%" height="auto"></video>
+            </div>
+        </div>
+        <div class="row white main" id="textwidth">
+            <div class="container">
+                <div class="row">
+                    <div class="five columns left"> <img src="img/logo.png" alt="mu Logo">
+                        <h2>Specials &amp; Contests</h2> <img src="img/steak.jpg" alt="An Image for a Beef Steak"></div>
+                    <div class="six columns" id="margined">
+                        <p>This month we welcome Miss Daisy into our community. She will be asking guests to help her find an outfit appropriate to wear to our end of the month Gala. Complete the outfit with the chance to win a night out on us.</p>
+                        <h3> <a href="contest.html">View Our Contests...</a></h3>
+                        <p>Our seasonal specials created by Chief Bocuse allow dinners to experience the tastes of fall with a fresh new exploration of classically smoky flavors. Our in house Sommelier has paired seasonal wines with the tasting menu, to allow for a completely intoxicating experience.</p>
+                        <h3> <a href="SpecialsPage.html">View Our Specials...</a></h3> </div>
+                </div>
+                <div class="row">
+                    <div class="three columns">&nbsp;</div>
+                    <div class="six columns">
+                        <hr></hr>
+                    </div>
+                    <div class="three columns">&nbsp;</div>
+                </div>
+                <div class="row" id="grey">
+                    <form name="myForm" action="javascript:alert('Thank you for subscribing to our mailing list!')" onsubmit="return validateForm();" method="post">
+                        <div class="field" id="searchform">
+                            <input type="text" id="searchterm" name="email" placeholder="Get Free Recipes" />
+                            <button type="submit" id="search" value="Submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="middle">
+                    <div class="two columns">&nbsp;</div>
+                    <div class="two columns">
+                        <div class="row"> Contact:</div>
+                        <div class="row">
+                            <p> +1-888-888-8888</p>
+                            <p> reservations@mu.com</p>
+                        </div>
+                    </div>
+                    <div class="two columns" id="less">&nbsp;</div>
+                    <div class="three columns">
+                        <div class="row">Sitemap:</div>
+                        <div class="row">
+                            <div class="one column">
+                                <ul>
+                                   <li><a href="index.html">Home</a></li>
+                                    <li><a href="menu.html">Menu</a></li>
+                                     <li><a href="SpecialsPage.html">Specials</a></li>
+                                    <li><a href="location.html">Location</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="one column border"></div>
+                            <div class="two columns" id="alignright">
+                                <ul>
+                                    <li><a href="giftcards.html">Gift Cards</a></li>
+                                    <li><a href="contest.html">Contest</a></li>
+                                    <li><a href="AboutPage.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one column">&nbsp;</div>
+                    <div class="two columns">
+                        <div class="row">Location:</div>
+                        <div class="row">
+                           <p> 205 Humber College Blvd</p>
+                                <p>Toronto, Ontario, Canada</p>
+                                <p>M9W 5L7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <hr> </div>
+            </div>
+            <div class="row" id="ptop">
+                <div class="three columns">&nbsp;</div>
+                <div class="two columns">
+                    <h2>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <a href=""><i class="fa fa-vimeo-square" aria-hidden="true"></a></i>&nbsp;&nbsp;
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></h2> </div>
+                <div class="four columns">&nbsp;</div>
+                <div class="four columns" id="light"> <img src="img/logo.png" alt="mu Restaurant Logo">&nbsp; &copy; 2016 Copyrights Reserved</div>
+            </div>
+        </footer>
+    </header>
+</body>
+
+</html>

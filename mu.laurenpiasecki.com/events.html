@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="uft-8"/>
+	<title>Events / Booking</title>
+<meta name="description" content="mu Steakhouse and Lounge"/>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="jquery/jquery-ui.min.css">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="css/style.css">
+   <!--<script src="simplifica.cufonfonts.js" type="text/javascript"></script> -->
+  <script type ="text/javascript" src="javascript/events.js">
+  
+   </script> 
+   </script>
+</head>
+<body>
+	<header>
+		 <div class="wrapper">
+            <div class="row white">
+                <div class="three columns">
+                    <a href="index.html"><img class="logo" src="img/logo.png" alt="mu Restaurant Logo"></a>
+                </div>
+                <div class="one column"></div>
+                <div class="eight columns">
+				
+                    <nav class="right">
+					  <ul>
+                             <li><a href="menu.html">Menu</a></li>
+                            <li><a href="location.html">Location</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="giftcards.html">Gift Cards</a></li>
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+<div class="row">
+            <div class="twelve columns">
+			<img src= "img/header1.jpg" alt="Grapes" title="Grapes" width="100%" height="100%" />
+                <!--Your heading image goes here-->
+            </div>
+        </div>
+		</header>
+        <!-- Your Content goes here -->
+        <div class="row white main">
+            <!--New row taking the 12 columns full-width, white is the background color, main is the padding and styles-->
+            <div class="container">
+                <!-- Creates a new box aligned in the center for you to call the 12 columns-->
+                <div class="row">
+                   <!--New row-->
+                    <!-- new row inside the container-->
+                    <div class="five columns left"><img src="img/logo.png" alt="mu Logo">
+                        <!--Logo on the body section if you need it-->	
+                        <h2>EVENTS / BOOKING</h2>
+                        <!-- Title for the page if you need it-->
+                    </div>
+                </div>
+                <div class="row">
+				<p>Host your next party or coorperate event at mu!</p>
+				</div>
+				<div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+							 <div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+                    <div class="row">	
+                        <div class="twelve columns">
+						 <p>We offer unique set menus for lunch and dinner events, as well as delicious hors d'oeuvres menu selections for cocktail receptions.
+						Call us at 416-555-2345, email events@murestaurant.ca or fill out the form below to book your next event.</p>
+						</div>
+						<div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+						<div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+							 <div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+					<div class="row">
+                        <!--New row-->
+						<p id="thanks_msg"></p>
+						<form action="#" method="post" id="eventForm" name="event_form">
+					<p>
+					<fieldset>
+						<p><legend>Event Details</legend></p>
+						<div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+						<p>
+							<label for="date">Date:</label>
+							<input type="text" id="datepicker" name="f_date"/>
+						</p>
+						<p>
+							<label for="time">Time:</label>
+								<select name="f_time" id="time">
+								<option value=" ">Select</option>
+								<option value=" ">-- LUNCH --</option>
+								<option value="one">12:00pm</option>
+								<option value="two">12:30pm</option>
+								<option value="three">1:00pm</option>
+								<option value="four">1:30pm</option>
+								<option value=" ">-- DINNER --</option>
+								<option value="five">5:00pm</option>
+								<option value="six">5:30pm</option>
+								<option value="seven">6:00pm</option>
+								<option value="eight">6:30pm</option>
+								<option value="nine">7:00pm</option>
+								<option value="ten">7:30pm</option>
+								</select>
+						</p>
+						<p>
+							<label for="size">Number of Guests:</label>
+							<input type="text" id="size" name="f_size" />
+						</p>
+					</fieldset>
+					<div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+					</p>
+					<p>
+					<fieldset>
+					<div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+						<p><legend>Contact Information</legend></p>
+						<div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+						<p>
+							<label for="name">Full Name:</label>
+							<input type="text" id="name" name="f_name" />
+						</p>
+						<p>
+							<label for="number">Phone Number:</label>
+							<input type="text" id="number" name="f_number" />
+						</p> 
+						<p>
+							<label for="email">Email:</label>
+							<input type="text" id="email" name="f_email" />
+						</p> 
+						<div class="row">
+                        <!--New row-->
+                        <div class="twelve columns">
+                            &nbsp;
+                             </div>
+							</div>
+					<p><button type="submit" name="confirm">Submit Request</button></p>
+			</form>
+					</div>
+					<br> 
+                            <hr> </div> 
+                    </div>
+                </div>
+			</div>
+            </div>
+        </div>
+		</body>
+        <!--End of content section-->
+        <footer>
+            <div class="row">
+                <div class="middle">
+                    <div class="two columns">&nbsp;</div>
+                    <div class="two columns">
+                        <div class="row"> Contact:</div>
+                        <div class="row">
+                            <p>+1-888-888-8888</p>
+                            <p>reservations@mu.com</p>
+                        </div>
+                    </div>
+                    <div class="two columns" id="less">&nbsp;</div>
+                    <div class="three columns">
+                        <div class="row">Sitemap:</div>
+                        <div class="row">
+                            <div class="one column">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="menu.html">Menu</a></li>
+                                     <li><a href="SpecialsPage.html">Specials</a></li>
+                                    <li><a href="location.html">Location</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                </ul>
+                            </div>
+                            <div class="one column border"></div>
+                            <div class="two columns" id="alignright">
+                                <ul>
+                                     <li><a href="giftcards.html">Gift Cards</a></li>
+                                    <li><a href="contest.html">Contest</a></li>
+                                    <li><a href="AboutPage.html">About Us</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                    <li><a href="events.html">Events</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="one column">&nbsp;</div>
+                    <div class="two columns">
+                        <div class="row">Location:</div>
+                        <div class="row">
+                             <p> 205 Humber College Blvd</p>
+                                <p>Toronto, Ontario, Canada</p>
+                                <p>M9W 5L7</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="container">
+                    <hr> </div>
+            </div>
+            <div class="row" id="ptop">
+                <div class="three columns">&nbsp;</div>
+                <div class="two columns">
+                    <h2>
+                    <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>&nbsp;&nbsp;
+                    <a href=""><i class="fa fa-vimeo-square" aria-hidden="true"></a></i>&nbsp;&nbsp;
+                    <a href=""><i class="fa fa-twitter" aria-hidden="true"></i></a></h2> </div>
+                <div class="four columns">&nbsp;</div>
+                <div class="four columns" id="light"><img src="img/logo.png" alt="mu Restaurant Logo">&nbsp; &copy; 2016 Copyrights Reserved</div>
+            </div>
+</footer>
+</html>

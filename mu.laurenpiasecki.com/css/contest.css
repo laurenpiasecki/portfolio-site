@@ -1,0 +1,23 @@
+/* ############################### Styling for game ############### */
+.header {
+	width: 100%;
+	height: auto;
+}
+
+.ui-dialog-titlebar-close {
+    visibility: hidden;
+}
+
+.fullCow {
+	display: none;
+}
+
+#hatList ul li{
+	list-style: none;
+	display: inline-block;
+}
+
+#dropSlot {
+	margin: 40px;
+}
+

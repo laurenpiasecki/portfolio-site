@@ -1,0 +1,136 @@
+/********SLIDESHOW***********/
+.sliderContainer {
+ margin: 0 auto;
+  width: 100%;
+  background-color: #fff;
+  min-height: 400px;
+}
+
+
+#slider {
+    width: 100%; 
+    overflow: hidden;
+    height: 400px;
+    position: relative;
+}
+
+#slider ul {
+display: block;
+width: 6000px;
+height: 400px; 
+margin: 0;
+padding: 0;
+}
+
+#slider li {
+
+float: left;
+list-style-type: none;
+width: 720px;
+height: 400px;
+}
+
+
+#slider li img {
+width: 100%;
+border: none;
+max-height: 100%;
+min-height: 100%; 
+}
+
+#slider div {
+z-index: 3;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+height: 3em;
+box-sizing: border-box;
+background-color: rgba(0, 0, 0, 0.5);
+color: #fff;
+line-height: 3em;
+padding: 0 1em;
+font-size: 1.5em;
+}
+
+#slider div a {
+color: inherit;
+}
+
+/*********END SLIDESHOW********/
+#map {
+    width: 400px;
+    height:400px;
+    margin-left:20px;
+}
+
+
+#hours h2, #dress-code h2, #address h2  {
+    font-size: 1.5em;
+    
+    font-family: 'Simplifica', sans-serif;
+    padding:5px;
+    padding-left: 1px;
+    margin-bottom:20px;
+}
+
+#hours {
+    
+    margin-bottom: 30px;
+}
+
+
+#border {
+    border-right:  1px solid grey;
+    background: grey;
+    width: 1px;
+    height: 100px;
+    float:right;
+    position: relative;
+    margin-right: 100%;
+    margin-top: -100;
+    z-index: 10;
+}
+
+#dress-code {
+    
+    margin-top: 20px;
+}
+
+#directions {
+
+    height: 30px;
+    text-align: center;
+    font-weight: 300;
+    padding-top: 10px;
+    background: #e0e1e3;
+
+
+
+}
+
+#directions_section {
+    margin-top: 50px;
+}
+
+.times {
+    margin:0;
+}
+
+#address {
+    
+    margin-bottom: 20px;
+   
+}
+
+#time{
+    border: 1px solid grey;
+    width:50%;
+    height:40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 0;
+   
+
+}
+
